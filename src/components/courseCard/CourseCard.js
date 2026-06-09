@@ -19,7 +19,7 @@ export class CourseCard {
     card.innerHTML = `
     <div class="course-card">
      <div class="course-card__image">
-        <img src="${this.image}" alt="${this.title}">
+        <img src="${this.image}" alt="${this.title} class="course-card__image">
       </div>
       <div class="course-card__content">
         <div class="course-card__category ${this.type} ">${this.category}</div>

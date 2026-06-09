@@ -66,11 +66,16 @@ body {
   padding-left: 335px;
   padding-right: 335px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .courses-container {
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 80px;
@@ -99,4 +104,194 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.bg-decoration {
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// Справа сверху
+.bg-decoration--top-right {
+  top: 20px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background-image: url('../shared/assets/backimg/dots.png');
+
+  @media (max-width: 320px) {
+    right: -35px;
+  }
+}
+
+// Слева посередине
+.bg-decoration--middle-left {
+  top: 50%;
+  left: 56px;
+  transform: translateY(-50%);
+  width: 83px;
+  height: 44px;
+  background-image: url('../shared/assets/backimg/shapes-1.png');
+}
+
+// Справа снизу
+.bg-decoration--bottom-right {
+  bottom: 30px;
+  right: 72px;
+  width: 85px;
+  height: 85px;
+  background-image: url('../shared/assets/backimg/shapes.png');
+}
+
+//adaptive
+@media (max-width: 1200px) {
+  .course-card {
+    max-width: 340px;
+    height: 400px;
+  }
+
+  .course-card__image {
+    height: 200px;
+  }
+
+  .course-card__title {
+    font-size: 18px;
+  }
+
+  .course-card__price,
+  .course-card__author {
+    font-size: 16px;
+  }
+  .section-container {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+// Планшеты
+@media (max-width: 992px) {
+  .course-card {
+    max-width: 300px;
+    height: 380px;
+  }
+
+  .course-card__image {
+    height: 180px;
+  }
+
+  .course-card__content {
+    padding: 20px;
+  }
+
+  .course-card__title {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+
+  .course-card__category {
+    margin-bottom: 20px;
+  }
+  .section-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+// Маленькие планшеты
+@media (max-width: 768px) {
+  .course-card {
+    max-width: 100%;
+    height: auto;
+    min-height: 360px;
+  }
+
+  .course-card__image {
+    height: 200px;
+  }
+
+  .course-card__content {
+    padding: 20px;
+  }
+  .section-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+// Мобильные
+@media (max-width: 480px) {
+  .heading-container-h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0%;
+  }
+  .course-card {
+    max-width: 100%;
+  }
+
+  .course-card__image {
+    height: 180px;
+  }
+
+  .course-card__content {
+    padding: 16px;
+  }
+
+  .course-card__title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .course-card__price,
+  .course-card__author {
+    font-size: 14px;
+  }
+
+  .course-card__category {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .section-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+// Маленькие мобильные
+@media (max-width: 320px) {
+  .course-card {
+    max-width: 100%;
+    min-height: 320px;
+  }
+
+  .course-card__image {
+    height: 160px;
+  }
+
+  .course-card__content {
+    padding: 12px;
+  }
+
+  .course-card__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .course-card__price,
+  .course-card__author {
+    font-size: 13px;
+  }
+
+  .course-card__category {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+  .section-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

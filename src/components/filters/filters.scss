@@ -6,6 +6,7 @@
 
 .filters__search {
   width: 315px;
+
   padding-left: 16px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -72,5 +73,133 @@
   font-size: 10px;
   .filter-btn.active & {
     color: var(--button-active);
+  }
+}
+
+//adaptive
+
+@media (max-width: 1200px) {
+  .filters__search {
+    width: 280px;
+  }
+
+  .filter-btn {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+  }
+}
+
+// Планшеты
+@media (max-width: 992px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .filters__search-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .filters__search {
+    width: 100%;
+  }
+
+  .filters__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    margin-left: 0;
+  }
+}
+
+// Маленькие планшеты
+@media (max-width: 768px) {
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+// Мобильные
+@media (max-width: 480px) {
+  .filters {
+    gap: 12px;
+  }
+
+  .filters__search {
+    padding-left: 12px;
+    padding-right: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .filters__search-icon {
+    right: 12px;
+  }
+
+  .filters__buttons {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .filter-btn__count {
+    font-size: 9px;
+  }
+}
+
+// Маленькие мобильные
+@media (max-width: 320px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 310px;
+  }
+
+  .filters__search {
+    padding-left: 10px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 13px;
+  }
+
+  .filters__search-wrapper {
+    width: 290px;
+  }
+
+  .filters__search-icon {
+    right: 10px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .filters__buttons {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .filter-btn__count {
+    font-size: 8px;
   }
 }
