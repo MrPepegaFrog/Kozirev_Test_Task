@@ -1,0 +1,168 @@
+import PeopleImg1 from '../assets/people1.png';
+import PeopleImg2 from '../assets/people2.png';
+import PeopleImg3 from '../assets/people3.png';
+import PeopleImg4 from '../assets/people4.png';
+import PeopleImg5 from '../assets/people5.png';
+import PeopleImg6 from '../assets/people6.png';
+import PeopleImg7 from '../assets/people7.png';
+import PeopleImg8 from '../assets/people8.png';
+import PeopleImg9 from '../assets/people9.png';
+
+export const coursesData = [
+  {
+    id: 1,
+    title: 'The Ultimate Google Ads Training Course',
+    price: 100,
+    author: 'Jerome Bell',
+    category: 'Marketing',
+    image: PeopleImg1,
+    type: 'marketing',
+  },
+  {
+    id: 2,
+    title: 'Product Management Fundamentals',
+    price: 480,
+    author: 'Marvin McKinney',
+    category: 'Management',
+    image: PeopleImg2,
+    type: 'management',
+  },
+  {
+    id: 3,
+    title: 'HR  Management and Analytics',
+    price: 200,
+    author: 'Leslie Alexander Li',
+    category: 'HR & Recruting',
+    image: PeopleImg3,
+    type: 'hr_recruting',
+  },
+
+  {
+    id: 4,
+    title: 'Brand Management & PR Communications',
+    price: 530,
+    author: 'Kristin Watson',
+    category: 'Marketing',
+    image: PeopleImg4,
+    type: 'marketing',
+  },
+  {
+    id: 5,
+    title: 'Graphic Design Basic',
+    price: 500,
+    author: 'Guy Hawkins',
+    category: 'Design',
+    image: PeopleImg5,
+    type: 'design',
+  },
+  {
+    id: 6,
+    title: 'Business Development Management',
+    price: 400,
+    author: 'Dianne Russell',
+    category: 'Management',
+    image: PeopleImg6,
+    type: 'management',
+  },
+
+  {
+    id: 7,
+    title: 'Highload Software Architecture',
+    price: 600,
+    author: 'Brooklyn Simmons',
+    category: 'Development',
+    image: PeopleImg7,
+    type: 'development',
+  },
+  {
+    id: 8,
+    title: 'Human Resources – Selection and Recruitment',
+    price: 150,
+    author: 'Kathryn Murphy',
+    category: 'HR & Recruting',
+    image: PeopleImg8,
+    type: 'hr_recruting',
+  },
+  {
+    id: 9,
+    title: 'User Experience. Human-centered Design',
+    price: 240,
+    author: 'Cody Fisher',
+    category: 'Design',
+    image: PeopleImg9,
+    type: 'design',
+  },
+  {
+    id: 10,
+    title: 'Highload Software Architecture',
+    price: 600,
+    author: 'Brooklyn Simmons',
+    category: 'Development',
+    image: PeopleImg7,
+    type: 'development',
+  },
+  {
+    id: 11,
+    title: 'Human Resources – Selection and Recruitment',
+    price: 150,
+    author: 'Kathryn Murphy',
+    category: 'HR & Recruting',
+    image: PeopleImg8,
+    type: 'hr_recruting',
+  },
+  {
+    id: 12,
+    title: 'User Experience. Human-centered Design',
+    price: 240,
+    author: 'Cody Fisher',
+    category: 'Design',
+    image: PeopleImg9,
+    type: 'design',
+  },
+  {
+    id: 13,
+    title: 'Graphic Design Basic',
+    price: 500,
+    author: 'Guy Hawkins',
+    category: 'Design',
+    image: PeopleImg5,
+    type: 'design',
+  },
+  {
+    id: 14,
+    title: 'Business Development Management',
+    price: 400,
+    author: 'Dianne Russell',
+    category: 'Management',
+    image: PeopleImg6,
+    type: 'management',
+  },
+
+  {
+    id: 15,
+    title: 'Highload Software Architecture',
+    price: 600,
+    author: 'Brooklyn Simmons',
+    category: 'Development',
+    image: PeopleImg7,
+    type: 'development',
+  },
+  {
+    id: 16,
+    title: 'The Ultimate Google Ads Training Course',
+    price: 100,
+    author: 'Jerome Bell',
+    category: 'Marketing',
+    image: PeopleImg1,
+    type: 'marketing',
+  },
+  {
+    id: 17,
+    title: 'Product Management Fundamentals',
+    price: 480,
+    author: 'Marvin McKinney',
+    category: 'Management',
+    image: PeopleImg2,
+    type: 'management',
+  },
+];

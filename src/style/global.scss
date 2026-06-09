@@ -1,0 +1,102 @@
+:root {
+  --card_background: #ffffff;
+
+  --marketing: #03cea4;
+  --management: #5a87fc;
+  --hr_recruting: #f89828;
+  --design: #f52f6e;
+  --develop: #7772f1;
+
+  --category_card: #ffffff;
+  --price: #ff4242;
+  --price-title: #787a80;
+
+  --border: #e5e8ed;
+
+  --text: #1e212c;
+  --button-text: #9a9ca5;
+
+  --button-active: #ff3f3a;
+  --border-search: #d7dadd;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('../shared/fonts/Lato-Regular.ttf');
+}
+
+* {
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+body {
+  padding-top: 44px;
+  padding-bottom: 86px;
+}
+
+.heading-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.heading-container-h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.heading-container-h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-container {
+  padding-left: 335px;
+  padding-right: 335px;
+  width: 100%;
+}
+
+.courses-container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.more-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.more {
+  cursor: pointer;
+}
+
+.course-filter {
+  margin-bottom: 60px;
+}
+
+.pag-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
