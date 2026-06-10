@@ -17,7 +17,7 @@ export class CourseCard {
     card.dataset.id = this.id;
 
     card.innerHTML = `
-    <div class="course-card">
+    
      <div class="course-card__image">
         <img src="${this.image}" alt="${this.title} class="course-card__image">
       </div>
@@ -29,7 +29,7 @@ export class CourseCard {
           <span class="course-card__author">| by ${this.author}</span>
         </div>
       </div>
-    </div>
+    
      
     `;
 

@@ -1,6 +1,6 @@
 import './filters.scss';
 import searchIco from '../../shared/assets/ico/search.svg';
-import { debounce } from '../../features/debounce/Debounce';
+import { debounce } from '../../shared/utils/debounce/Debounce';
 export class Filters {
   constructor({ data, onFilterChange }) {
     this.data = data;
@@ -92,7 +92,7 @@ export class Filters {
     return container;
   }
 
-  updateButtonsState(container) {
+  #updateButtonsState(container) {
     const buttons = container.querySelectorAll('.filter-btn');
     buttons.forEach((btn, index) => {
       const type = this.categories[index].type;
@@ -104,7 +104,7 @@ export class Filters {
     });
   }
 
-  notifyChange() {
+  #notifyChange() {
     if (this.onFilterChange) {
       this.onFilterChange({
         category: this.activeCategory,
