@@ -92,7 +92,7 @@ export class Filters {
     return container;
   }
 
-  #updateButtonsState(container) {
+  updateButtonsState(container) {
     const buttons = container.querySelectorAll('.filter-btn');
     buttons.forEach((btn, index) => {
       const type = this.categories[index].type;
@@ -104,7 +104,7 @@ export class Filters {
     });
   }
 
-  #notifyChange() {
+  notifyChange() {
     if (this.onFilterChange) {
       this.onFilterChange({
         category: this.activeCategory,
